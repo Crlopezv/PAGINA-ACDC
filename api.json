@@ -1,0 +1,56 @@
+[
+    {
+      "precio": 550000,
+      "id": 1,
+      "title": "Guitarra de Angus young",
+      "thumbnailUrl": "https://i.imgur.com/RiW6c6d.png"
+    },
+    {
+      "precio": 44000,
+      "id": 2,
+      "title": "Camiseta de brian jhonson",
+      "thumbnailUrl": "https://i.imgur.com/kUPGrIq.png"
+    },
+    {
+      "precio": 16000,
+      "id": 3,
+      "title": "Polera de ac/dc",
+      "thumbnailUrl": "https://i.imgur.com/DwFZFX4.png"
+    },
+    {
+      "precio": 30000,
+      "id": 4,
+      "title": "AC/DC Back in Black Juniors Cheetah polera",
+      "thumbnailUrl": "https://i.imgur.com/5lcmT5Z.png"
+    },
+    {
+      "precio": 20000,
+      "id": 5,
+      "title": "AC/DC Angus Young Hoodie",
+      "thumbnailUrl": "https://i.imgur.com/Xnca1ol.png"
+    },
+    {
+      "precio": 17000,
+      "id": 6,
+      "title": "AC/DC Live At Donington Pullover Hoodie",
+      "thumbnailUrl": "https://i.imgur.com/HQ4wfKo.png"
+    },
+    {
+      "precio":25000,
+      "id": 7,
+      "title": "AC/DC POWER UP CDs",
+      "thumbnailUrl": "https://i.imgur.com/niAnXJc.png"
+    },
+    {
+      "precio": 50000,
+      "id": 8,
+      "title": "AC/DC Rock Or Bust CD",
+      "thumbnailUrl": "https://i.imgur.com/8nH8Nf6.png"
+    },
+    {
+      "precio": 35000,
+      "id": 9,
+      "title": "AC/DC Iron Man 2 Soundtrack Deluxe Edition CD",
+      "thumbnailUrl": "https://i.imgur.com/qaaOSPQ.png"
+    }
+  ]

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--- Mis estilos -->
+  
+
+    <title>Página Principal</title>
+  </head>
+  <body>
+
+ <!-- Navbar-IniciarSesion -->
+ <nav id="navbarejemplo" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+  <div class="container">
+      <a href="/Paginaprincipal.html" class="navbar-brand">
+          <img class="logo-nav" src="img/logo.png" class="icon icon-tabler icon-tabler-dog-bowl" width="130"
+              height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 15l5.586 -5.585a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-3.587 3.586" />
+              <path d="M12 13l-3.586 -3.585a2 2 0 1 0 -3.414 -1.415a2 2 0 1 0 1.413 3.414l3.587 3.586" />
+              <path d="M3 20h18c-.175 -1.671 -.046 -3.345 -2 -5h-14c-1.333 1 -2 2.667 -2 5z" />
+          </svg></i>
+          <span class="align"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a href="/Paginaprincipal.html" class="nav-link active" aria-current="page">
+                      Principal
+                  </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="/iniciarSesion.html" class="nav-link active">
+            Iniciar Sesion
+          </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="/productos.html" class="nav-link active">
+            Productos
+          </a>
+
+        </li>
+
+
+        <li class="nav-item">
+          <a href="/colabora.html" class="nav-link active">
+            Colabora
+          </a>
+
+        </li>
+
+        <li class="nav-item">
+          <a href="/usuarios.html" class="nav-link active">
+            Registro Usuario
+          </a>
+
+        </li>
+
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container py-5 mt-4">
+
+      <div class="row justify-content-md-center">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Registro de Usuarios</h5>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputPrimerNombre" class="text-primary mt-2">Primer Nombre</label>
+                    <input type="text" class="form-control" id="inputPrimerNombre">
+                    <input type="text" class="form-control" id="inputIdUsuario" hidden>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputSegundoNombre" class="text-primary mt-2">Segundo Nombre</label>
+                    <input type="text" class="form-control" id="inputSegundoNombre">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputApellidoPaterno" class="text-primary mt-2">Apellido Paterno</label>
+                    <input type="text" class="form-control" id="inputApellidoPaterno">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputApellidoMaterno" class="text-primary mt-2">Apellido Materno</label>
+                    <input type="text" class="form-control" id="inputApellidoMaterno">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputDireccion" class="text-primary mt-2">Dirección</label>
+                  <input type="text" class="form-control mt-2" id="inputDireccion" placeholder="Mi casa 1234">
+                </div>
+
+                <!-- 
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCiudad">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCiudad">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputRegion">Región</label>
+                    <select id="inputRegion" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+
+                -->
+
+              <a id="btnAgregarUsuario" class="btn btn-primary mt-3">Registrar</a>
+              <a id="btnEditarUsuarioTabla" class="btn btn-success mt-3">Editar</a>
+              <a id="btnCancelarEdicion" class="btn btn-secondary mt-3">Cancelar</a>
+            </div>
+          </div>
+        </div>
+
+        <!--  
+        <div class="col-sm-6">
+          <div class="card" style="height: 100%;">
+            <div class="card-body">
+
+              <h5 class="card-title">Listado de Usuarios</h5>
+
+              <a href="#" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        -->
+
+      </div>
+
+
+      <div class="row mt-4">
+        <div class="col-sm-12">
+          <div class="card" style="height: 100%;">
+            <div class="card-body">
+
+              <h5 class="card-title text-primary">Listado de Usuarios</h5>
+
+              <!-- Tabla de usuarios -->
+              <div class="table-responsive">
+                <table class="table" id="tablaUsuarios">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col" class="text-primary">#</th>
+                      <th scope="col" class="text-primary">Primer Nombre</th>
+                      <th scope="col" class="text-primary">Segundo Nombre</th>
+                      <th scope="col" class="text-primary">Apellido Paterno</th>
+                      <th scope="col" class="text-primary">Apellido Materno</th>
+                      <th scope="col" class="text-primary">Dirección</th>
+                      <th scope="col" class="text-primary">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-primary">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Alan</td>
+                      <td>Larry</td>
+                      <td>Brito</td>
+                      <td>Delgado</td>
+                      <td>Su casa #123, La Florida</td>
+                      <td>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-success btnEditarusuario"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-danger btnEliminarUsuario"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Maria</td>
+                      <td>Thornton</td>
+                      <td>Campos</td>
+                      <td>Asencio</td>
+                      <td>Su casa #123, La Pintana</td>
+                      <td>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-success btnEditarusuario"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-danger btnEliminarUsuario"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Eustaquio</td>
+                      <td>Onofre</td>
+                      <td>Clavero</td>
+                      <td>Sancho</td>
+                      <td>Su casa #123, San Ramón</td>
+                      <td>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-success btnEditarusuario"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-danger btnEliminarUsuario"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+    <!--- Mis scripts -->
+    <script> 
+
+    const API_URL = 'https://5000-gentlegent18-apicarrito-s9n26p0chrh.ws-us47.gitpod.io';
+
+    //cargar tabla con usuarios cargados desde ajax
+    $(document).ready(function(){
+      $('#tablaUsuarios tbody').empty();
+      
+      $('#btnEditarUsuarioTabla').hide();
+      $('#btnCancelarEdicion').hide();
+      actualizarTabla()
+    });
+
+      //click en .btnEditarusuario
+      $(document).on('click', '.btnEditarusuario', function(){
+        //obtener el id del usuario
+        var idUsuario = $(this).closest('tr').find('th').text();
+        //obtener todo el usuario
+        var usuario = $(this).closest('tr').find('td');
+        //obtener los datos del usuario
+        var primer_nombre = usuario.eq(0).text();
+        var segundo_nombre = usuario.eq(1).text();
+        var apellido_paterno = usuario.eq(2).text();
+        var apellido_materno = usuario.eq(3).text();
+        var direccion = usuario.eq(4).text();
+
+        //mostrar los datos del usuario en los inputs
+        $('#inputPrimerNombre').val(primer_nombre);
+        $('#inputSegundoNombre').val(segundo_nombre);
+        $('#inputApellidoPaterno').val(apellido_paterno);
+        $('#inputApellidoMaterno').val(apellido_materno);
+        $('#inputDireccion').val(direccion);
+        $('#inputIdUsuario').val(idUsuario);
+
+        $('#btnAgregarUsuario').hide();
+        $('#btnEditarUsuarioTabla').show();
+        $('#btnCancelarEdicion').show();
+      });
+
+
+      //añadir usuario a la lista con jquery
+      $(document).on('click', '#btnAgregarUsuario', function(){
+        //obtener los datos del usuario
+        var primer_nombre = $('#inputPrimerNombre').val();
+        var segundo_nombre = $('#inputSegundoNombre').val();
+        var apellido_paterno = $('#inputApellidoPaterno').val();
+        var apellido_materno = $('#inputApellidoMaterno').val();
+        var direccion = $('#inputDireccion').val();
+
+        //cargar a la db mediante ajax mi usuario
+        $.ajax({
+            url: API_URL+'/usuarios',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                primer_nombre: primer_nombre,
+                segundo_nombre: segundo_nombre,
+                apellido_paterno: apellido_paterno,
+                apellido_materno: apellido_materno,
+                direccion: direccion
+            }),
+            success: function(respuesta){
+                console.log(respuesta);
+                actualizarTabla();
+            }
+        })
+
+      });
+      
+
+      //borrar usuario de la lista con jquery
+      $(document).on('click', '.btnEliminarUsuario', function(){
+        //eliminar la fila
+        var idUsuario = $(this).closest('tr').find('th').text();
+
+        $.ajax({
+            url: API_URL+'/usuarios/'+idUsuario,
+            type: 'DELETE',
+            dataType: 'json',
+            data: {
+                id:idUsuario
+            },
+            success: function(respuesta){
+                console.log('Usuario Eliminado')
+                actualizarTabla()
+            }
+
+        })
+
+
+
+      });
+
+      //funcion encontrar el ultimo id de la tabla
+      function obtenerUltimoId(){
+        var ultimoId = $('#tablaUsuarios tr:last th').text();
+        return parseInt(ultimoId) + 1;
+      }
+
+      //editar usuario con ajax
+      $(document).on('click', '#btnEditarUsuarioTabla', function(){
+        //obtener los datos del usuario
+        var primer_nombre = $('#inputPrimerNombre').val();
+        var segundo_nombre = $('#inputSegundoNombre').val();
+        var apellido_paterno = $('#inputApellidoPaterno').val();
+        var apellido_materno = $('#inputApellidoMaterno').val();
+        var direccion = $('#inputDireccion').val();
+        var idUsuario = $('#inputIdUsuario').val();
+
+        $.ajax({
+            url: API_URL+'/usuarios/'+idUsuario,
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                primer_nombre: primer_nombre,
+                segundo_nombre: segundo_nombre,
+                apellido_paterno: apellido_paterno,
+                apellido_materno: apellido_materno,
+                direccion: direccion,
+                id: idUsuario
+            }),
+            success: function(respuesta){
+                console.log('Usuario Modificado');
+                actualizarTabla();
+                limpiarFormulario();
+            }
+        })
+
+      //fin
+      });
+
+      function actualizarTabla(){
+        $('#tablaUsuarios tbody').empty();
+
+        $.ajax({
+          url: API_URL+'/usuarios',
+          type: 'GET',
+          dataType: 'json',
+          success: function(respuesta){
+          console.log(respuesta);
+            for (var i = 0; i < respuesta.length; i++){
+                var fila = '<tr>' +
+                  '<th scope="row">' + respuesta[i].id + '</th>' +
+                  '<td>' + respuesta[i].primer_nombre + '</td>' +
+                  '<td>' + respuesta[i].segundo_nombre + '</td>' +
+                  '<td>' + respuesta[i].apellido_paterno + '</td>' +
+                  '<td>' + respuesta[i].apellido_materno + '</td>' +
+                  '<td>' + respuesta[i].direccion + '</td>' +
+                  '<td>' +
+                    '<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">' +
+                      '<button type="button" class="btn btn-success btnEditarusuario"><i class="fa-solid fa-pencil"></i></button>' +
+                      '<button type="button" class="btn btn-danger btnEliminarUsuario"><i class="fa-solid fa-trash"></i></button>' +
+                    '</div>'
+                  '</td>' +
+                '</tr>';
+
+                $('#tablaUsuarios').append(fila)
+            }
+
+
+          }
+        })
+
+      }
+
+
+      $(document).on('click', '#btnCancelarEdicion', function(){
+        limpiarFormulario();
+      })
+
+
+      function limpiarFormulario(){
+        $('#inputPrimerNombre').val('');
+        $('#inputSegundoNombre').val('');
+        $('#inputApellidoPaterno').val('');
+        $('#inputApellidoMaterno').val('');
+        $('#inputDireccion').val('');
+        $('#inputIdUsuario').val('');
+
+        $('#btnAgregarUsuario').show();
+        $('#btnEditarUsuarioTabla').hide();
+        $('#btnCancelarEdicion').hide();
+      }
+
+    
+    </script>
+
+
+
+
+  </body>
+</html>

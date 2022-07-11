@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <div class="container py-5">
+        <title>Compra Exitosa!</title>
+        <nav id="navbarejemplo" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+            <div class="container">
+                <a href="/Paginaprincipal.html" class="navbar-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dog-bowl" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 15l5.586 -5.585a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-3.587 3.586" />
+                        <path d="M12 13l-3.586 -3.585a2 2 0 1 0 -3.414 -1.415a2 2 0 1 0 1.413 3.414l3.587 3.586" />
+                        <path d="M3 20h18c-.175 -1.671 -.046 -3.345 -2 -5h-14c-1.333 1 -2 2.667 -2 5z" />
+                    </svg></i>
+                    <span class="align">Ayuda a tu amigo peludo</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+    
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/Paginaprincipal.html" class="nav-link active" aria-current="page" id="p-p">
+                                Principal
+                            </a>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a href="/iniciarSesion.html"  class="nav-link active" id="i-s">
+                                Iniciar Sesion
+                            </a>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a href="/productos.html" class="nav-link active" id="p">
+                                Productos
+                            </a>
+    
+                        </li>
+    
+    
+                        <li class="nav-item">
+                            <a href="/colabora.html" class="nav-link active" id="c">
+                                Colabora
+                            </a>
+    
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="/usuarios.html" class="nav-link active" id="r-u">
+                                Registro Usuario
+                            </a>
+    
+                        </li>
+    
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+    
+        
+    <h1 class="mt-5 text-center text-primary">Compra Exitosa!</h1>
+        <hr>
+        <div class="row" id="cards"></div>
+        <!-- Carrito de compra pintado -->
+        
+        <div class="card center border-secondary " ">
+            <table class="table">
+                <thead>
+                    
+                    <tr>
+                        <h5 class="mt-5 text-center text-primary">Detalle de venta</h5>
+                        <th scope="col" class="text-primary">ID</th>
+                        <th scope="col" class="text-primary"> Producto</th>
+                        <th scope="col" class="text-primary">Cantidad</th>
+                        <th scope="col" class="text-primary"></th>
+                        <th scope="col" class="text-primary">Total</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row" colspan="5" class="text-primary">Carrito vacío - comience a comprar!</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <h6 class="mt-5 text-center text-primary">****Gracias por preferirnos!****</h6>
+          </div>
+        <!-- Fin carrito de compra -->
+    </div>
+    <!-- Fin titulo -->
+
+    <!-- Los template no los lee el HTML por eso pueden estar fuera del container principal  -->
+    <template id="template-card">
+        <div class="col-12 col-md-4 mb-2">
+            <div class="card">
+                <img src="" alt="" class=card-img-top>
+                <div class=card-body>
+                    <h5 class="text-primary">Titulo</h5>
+                    <p class="text-primary">Precio </p>
+                    
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- Aca termina el template Card-productos -->
+
+    <!-- Template-Carro de compras principal -->
+    <template id="template-carrito">
+        <tr>
+            <th scope="row" class="text-primary">id</th>
+            <td class="text-primary">Café</td>
+            <td class="text-primary">1</td>
+            <td>
+                
+            </td>
+            <td class="text-primary">$ <span class="text-primary">500</span> <span> CLP</span></td>
+        </tr>
+    </template>
+    <!-- Aca termina template-carro de compras principal -->
+
+    <!-- Template-Carro de compra Footer -->
+    <template id="template-footer">
+        <th scope="row" colspan="2" class="text-primary">Total productos</th>
+        <td class="text-primary">10</td>
+        <td>
+           
+            
+        </td>
+        <td class="font-weight-bold text-primary">$ <span>5000</span> <span> CLP</span></td>
+    </template>
+    <!-- Aca termina Template-Carro de compra Footer  -->
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="boleta.js">
+
+    </script>
+
+</body>
+</html>
